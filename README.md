@@ -6,7 +6,7 @@ Saya seorang **Mahasiswa Teknik Informatika** di Sekolah Tinggi Teknologi Terpad
 
 Saya memiliki minat dalam dunia **Cyber Security**, khususnya dalam pertahanan sistem dan analisis keamanan. Saat ini, saya sedang menempuh studi dan aktif dalam berbagai proyek yang berkaitan dengan **database, web development, dan keamanan sistem**.  
 
-Jika kamu tertarik untuk berkenalan atau berdiskusi seputar **Cyber Security & Teknologi**, silakan hubungi saya melalui akun [LinkedIn](#) (sesuaikan dengan akun LinkedIn kamu).  
+Jika kamu tertarik untuk berkenalan atau berdiskusi seputar **Cyber Security & Teknologi**, silakan hubungi saya melalui akun [LinkedIn](https://www.linkedin.com/in/muhsalmanzz/) (sesuaikan dengan akun LinkedIn kamu).  
 
 ### 📊 Github Statistic
 <p align="left">
