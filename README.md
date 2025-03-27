@@ -6,7 +6,7 @@ Saya seorang **Mahasiswa Teknik Informatika** dengan minat utama di **Full Stack
 
 Saya tertarik dalam pengembangan aplikasi web dan sistem yang aman, serta eksplorasi teknologi kecerdasan buatan. Saat ini, saya aktif mengerjakan berbagai proyek yang berkaitan dengan **Cyber securtiy, FullStack Web Developer, dan Machine Learning**.  
 
-Jika kamu tertarik untuk berkenalan atau berdiskusi, silakan hubungi saya melalui akun [LinkedIn](https://www.linkedin.com/in/muhsalmanzz/).  
+Jika tertarik untuk berkenalan atau berdiskusi, silakan hubungi saya melalui akun [LinkedIn](https://www.linkedin.com/in/muhsalmanzz/).  
 
 ## 📊 GitHub Statistics  
 <p align="left">  
