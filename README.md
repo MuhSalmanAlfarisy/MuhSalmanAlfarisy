@@ -37,36 +37,30 @@
 
 ### 💻 Tech Stack
 
-<table align="center">
-  <tr>
-    <td align="center" width="220">
-      <strong>Frontend</strong><br /><br />
-      <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,next,vue,tailwind" alt="Frontend Technologies" />
-    </td>
-    <td align="center" width="220">
-      <strong>Backend</strong><br /><br />
-      <img src="https://skillicons.dev/icons?i=nodejs,express,go,python,fastapi,django" alt="Backend Technologies" />
-    </td>
-    <td align="center" width="220">
-      <strong>Mobile</strong><br /><br />
-      <img src="https://skillicons.dev/icons?i=flutter,dart,react,kotlin,swift" alt="Mobile Technologies" />
-    </td>
-  </tr>
-  <tr>
-    <td align="center" width="220">
-      <strong>AI / Machine Learning</strong><br /><br />
-      <img src="https://skillicons.dev/icons?i=py,tensorflow,pytorch,sklearn,pandas" alt="AI Technologies" />
-    </td>
-    <td align="center" width="220">
-      <strong>Database</strong><br /><br />
-      <img src="https://skillicons.dev/icons?i=mysql,postgres,mongodb,redis,sqlite" alt="Database Technologies" />
-    </td>
-    <td align="center" width="220">
-      <strong>DevOps & Tools</strong><br /><br />
-      <img src="https://skillicons.dev/icons?i=docker,kubernetes,gcp,aws,git,githubactions,figma,vscode" alt="DevOps Tools" />
-    </td>
-  </tr>
-</table>
+### 💻 Tech Stack
+
+<div align="center">
+
+#### 🧩 Frontend
+<img src="https://skillicons.dev/icons?i=html,css,js,ts,react,next,vue,tailwind" alt="Frontend" />
+
+#### 🛠️ Backend
+<img src="https://skillicons.dev/icons?i=nodejs,express,go,python,django,fastapi" alt="Backend" />
+
+#### 📱 Mobile
+<img src="https://skillicons.dev/icons?i=flutter,dart,react,kotlin,swift" alt="Mobile" />
+
+#### 🧠 AI / Machine Learning
+<img src="https://skillicons.dev/icons?i=py,tensorflow,pytorch,sklearn,pandas" alt="AI/ML" />
+
+#### 🗄️ Database
+<img src="https://skillicons.dev/icons?i=mysql,postgres,mongodb,redis,sqlite" alt="Databases" />
+
+#### ⚙️ DevOps & Tools
+<img src="https://skillicons.dev/icons?i=docker,kubernetes,aws,gcp,git,githubactions,figma,vscode" alt="DevOps & Tools" />
+
+</div>
+
 
 
 ---
