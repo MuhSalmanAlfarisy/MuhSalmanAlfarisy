@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://i.pinimg.com/736x/4f/6b/8d/4f6b8d5c3f9b7c7e1c3b8d7a0d7e3d7a.jpg" alt="Salman Alfarisy Banner" width="100%"/>
+  <img src="[https://i.pinimg.com/736x/4f/6b/8d/4f6b8d5c3f9b7c7e1c3b8d7a0d7e3d7a.jpg](https://pin.it/3dSNdQDLW)" alt="Salman Alfarisy Banner" width="100%"/>
 </p>
 
 <h1 align="center">Muhammad Salman Alfarisy</h1>
