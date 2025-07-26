@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://tenor.com/view/anime-dandadan-unclephuc-okarun-transform-gif-7899126876130699803" alt="Salman Alfarisy Banner" width="100%"/>
+  <div class="tenor-gif-embed" data-postid="7899126876130699803" data-share-method="host" data-aspect-ratio="1.5" data-width="100%"><a href="https://tenor.com/view/anime-dandadan-unclephuc-okarun-transform-gif-7899126876130699803">Anime Dandadan GIF</a>from <a href="https://tenor.com/search/anime-gifs">Anime GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
 </p>
 
 <h1 align="center">Muhammad Salman Alfarisy</h1>
