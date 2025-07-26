@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://media.tenor.com/oIfzcvfA6V0AAAAC/anime-dandadan-unclephuc.gif" alt="Anime Dandadan GIF" width="100%" />
+  <img src="[https://media.tenor.com/oIfzcvfA6V0AAAAC/anime-dandadan-unclephuc.gif](https://github.com/user-attachments/assets/13e81973-da7d-4456-8392-f93c57f5df19)" alt="Anime Dandadan GIF" width="100%" />
 </p>
 
 </p>
