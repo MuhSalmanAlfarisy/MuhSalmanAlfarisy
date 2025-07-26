@@ -36,36 +36,38 @@
 ---
 
 ### 💻 Tech Stack
+
 <table align="center">
   <tr>
-    <td align="center" width="150">
-      <strong>Frontend</strong><br>
-      <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,next,vue,tailwind" alt="Frontend Technologies"/>
+    <td align="center" width="220">
+      <strong>Frontend</strong><br /><br />
+      <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,next,vue,tailwind" alt="Frontend Technologies" />
     </td>
-    <td align="center" width="150">
-      <strong>Backend</strong><br>
-      <img src="https://skillicons.dev/icons?i=nodejs,express,go,python,fastapi,django" alt="Backend Technologies"/>
+    <td align="center" width="220">
+      <strong>Backend</strong><br /><br />
+      <img src="https://skillicons.dev/icons?i=nodejs,express,go,python,fastapi,django" alt="Backend Technologies" />
     </td>
-    <td align="center" width="150">
-      <strong>Mobile</strong><br>
-      <img src="https://skillicons.dev/icons?i=flutter,dart,react,kotlin,swift" alt="Mobile Technologies"/>
+    <td align="center" width="220">
+      <strong>Mobile</strong><br /><br />
+      <img src="https://skillicons.dev/icons?i=flutter,dart,react,kotlin,swift" alt="Mobile Technologies" />
     </td>
   </tr>
   <tr>
-    <td align="center" width="150">
-      <strong>AI/ML</strong><br>
-      <img src="https://skillicons.dev/icons?i=py,tensorflow,pytorch,sklearn,pandas" alt="AI Technologies"/>
+    <td align="center" width="220">
+      <strong>AI / Machine Learning</strong><br /><br />
+      <img src="https://skillicons.dev/icons?i=py,tensorflow,pytorch,sklearn,pandas" alt="AI Technologies" />
     </td>
-    <td align="center" width="150">
-      <strong>Database</strong><br>
-      <img src="https://skillicons.dev/icons?i=mysql,postgres,mongodb,redis,sqlite" alt="Database Technologies"/>
+    <td align="center" width="220">
+      <strong>Database</strong><br /><br />
+      <img src="https://skillicons.dev/icons?i=mysql,postgres,mongodb,redis,sqlite" alt="Database Technologies" />
     </td>
-    <td align="center" width="150">
-      <strong>DevOps</strong><br>
-      <img src="https://skillicons.dev/icons?i=docker,kubernetes,gcp,aws,git,githubactions,figma,vscode" alt="DevOps Tools"/>
+    <td align="center" width="220">
+      <strong>DevOps & Tools</strong><br /><br />
+      <img src="https://skillicons.dev/icons?i=docker,kubernetes,gcp,aws,git,githubactions,figma,vscode" alt="DevOps Tools" />
     </td>
   </tr>
 </table>
+
 
 ---
 
