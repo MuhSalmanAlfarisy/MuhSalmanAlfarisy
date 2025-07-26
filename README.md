@@ -1,7 +1,5 @@
 <div align="center">
-  <a href="https://github.com/MuhSalmanAlfarisy">
-    <img src="https://i.ibb.co/L5T8N7C/okarun-banner-example.png" alt="Header Banner Salman Alfarisy with Okarun" />
-  </a>
+  <img src="https://i.ibb.co/L5T8N7C/okarun-banner-example.png" alt="Header Banner Salman Alfarisy with Okarun" />
 </div>
 
 <br>
@@ -10,7 +8,7 @@
   <tr>
     <td width="70%" valign="top">
       <h1 align="left">Muhammad Salman Alfarisy</h1>
-      <h3 align="left">Software Engineer in Training | Full Stack | Multi-platform | AI & Security Enthusiast</h3>
+      <h3 align="left">Software Engineer | Full Stack | Multi-platform | AI & Security Enthusiast</h3>
       <p align="left">
         I'm a software engineer focused on building robust, intelligent, and secure digital solutions. With a full-stack mindset, I work across front-end, scalable back-end systems, cross-platform apps, and AI integration — all grounded in strong cybersecurity principles.
       </p>
@@ -31,16 +29,10 @@
 ### 📈 Dynamic Dashboard Statistics
 
 <p align="center">
-  <a href="https://github.com/MuhSalmanAlfarisy" target="_blank">
-    <img src="https://github-readme-stats.vercel.app/api?username=MuhSalmanAlfarisy&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true" alt="GitHub Stats" width="49%"/>
-  </a>
-  <a href="https://github.com/MuhSalmanAlfarisy" target="_blank">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=MuhSalmanAlfarisy&layout=compact&theme=tokyonight" alt="Top Languages" width="49%"/>
-  </a>
+  <img src="https://github-readme-stats.vercel.app/api?username=MuhSalmanAlfarisy&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true" alt="GitHub Stats" width="49%"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=MuhSalmanAlfarisy&layout=compact&theme=tokyonight" alt="Top Languages" width="49%"/>
   <br>
-  <a href="https://github.com/MuhSalmanAlfarisy" target="_blank">
-    <img src="https://github-readme-streak-stats.herokuapp.com/?user=MuhSalmanAlfarisy&theme=tokyonight" alt="GitHub Streak" width="49%"/>
-  </a>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=MuhSalmanAlfarisy&theme=tokyonight" alt="GitHub Streak" width="49%"/>
 </p>
 
 ---
@@ -51,29 +43,29 @@
   <tr>
     <td align="center" width="33%">
       <strong>Frontend</strong><br>
-      <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=html,css,js,typescript,react,nextjs,vue,tailwind" /></a>
+      <img src="https://skillicons.dev/icons?i=html,css,js,typescript,react,nextjs,vue,tailwind" alt="Frontend Tech Stack" />
     </td>
     <td align="center" width="33%">
       <strong>Backend</strong><br>
-      <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=nodejs,express,go,python,fastapi,django" /></a>
+      <img src="https://skillicons.dev/icons?i=nodejs,express,go,python,fastapi,django" alt="Backend Tech Stack" />
     </td>
     <td align="center" width="33%">
       <strong>Mobile & Multi-platform</strong><br>
-      <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=flutter,dart,react,kotlin,swift" /></a>
+      <img src="https://skillicons.dev/icons?i=flutter,dart,react,kotlin,swift" alt="Mobile Tech Stack" />
     </td>
   </tr>
   <tr>
     <td align="center" width="33%">
       <strong>AI & Machine Learning</strong><br>
-      <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=python,tensorflow,pytorch,sklearn,pandas" /></a>
+      <img src="https://skillicons.dev/icons?i=python,tensorflow,pytorch,sklearn,pandas" alt="AI & ML Tech Stack" />
     </td>
     <td align="center" width="33%">
       <strong>Database</strong><br>
-      <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=mysql,postgres,mongodb,redis,sqlite" /></a>
+      <img src="https://skillicons.dev/icons?i=mysql,postgres,mongodb,redis,sqlite" alt="Database Tech Stack" />
     </td>
     <td align="center" width="33%">
       <strong>DevOps & Tools</strong><br>
-      <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=docker,kubernetes,gcp,aws,git,githubactions,figma,vscode" /></a>
+      <img src="https://skillicons.dev/icons?i=docker,kubernetes,gcp,aws,git,githubactions,figma,vscode" alt="DevOps & Tools Tech Stack" />
     </td>
   </tr>
 </table>
@@ -83,13 +75,9 @@
 ### 🏆 Gamification & Contributions
 
 <p align="center">
-  <a href="https://github.com/MuhSalmanAlfarisy" target="_blank">
-    <img src="https://github-profile-trophy.vercel.app/?username=MuhSalmanAlfarisy&theme=tokyonight&row=1&column=7" alt="GitHub Trophies"/>
-  </a>
+  <img src="https://github-profile-trophy.vercel.app/?username=MuhSalmanAlfarisy&theme=tokyonight&row=1&column=7" alt="GitHub Trophies"/>
   <br>
-  <a href="https://github.com/MuhSalmanAlfarisy" target="_blank">
-    <img src="https://github-readme-activity-graph.vercel.app/graph?username=MuhSalmanAlfarisy&theme=tokyonight&hide_border=true&line=ffffff&point=ffffff&area=true&area_color=7957d5" alt="Activity Graph"/>
-  </a>
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=MuhSalmanAlfarisy&theme=tokyonight&hide_border=true&line=ffffff&point=ffffff&area=true&area_color=7957d5" alt="Activity Graph"/>
   <br>
   <img src="https://raw.githubusercontent.com/MuhSalmanAlfarisy/MuhSalmanAlfarisy/output/github-contribution-grid-snake.svg" alt="Snake Game"/>
 </p>
