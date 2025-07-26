@@ -5,7 +5,7 @@
 <div align="left">
   <h1>Hi 👋, I'm Muhammad Salman Alfarisy</h1>
   <h3>A passionate Full Stack Developer from Indonesia.</h3>
-  <p>I'm a software engineer focused on building robust, intelligent, and secure digital solutions. With a full-stack mindset, I work across front-end, scalable back-end systems, cross-platform apps, and AI integration — all grounded in strong cybersecurity principles.</p>
+  <p>I'm a software engineer focused on building robust, intelligent, and secure digital solutions. With a full-stack mindset, I work across front-end, scalable back-end systems, cross-platform apps, and AI integration all grounded in strong cybersecurity principles</p>
 </div>
 
 <br clear="right"/>
@@ -28,7 +28,7 @@
 ---
 
 ### Languages and Tools:
-<div align="center">
+<div align="leftr">
   <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,next,vue,tailwind,nodejs,express,go,python,django,flutter,dart,mysql,postgres,mongodb,redis,docker,kubernetes,git,githubactions,figma,vscode" alt="Tech Stack" />
 </div>
 
@@ -37,7 +37,7 @@
 <div align="left">
   <h3>📊 My GitHub Stats</h3>
 </div>
-<p align="center">
+<p align="left">
   <img src="https://github-readme-stats.vercel.app/api?username=MuhSalmanAlfarisy&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true" alt="GitHub Stats" width="45%"/>
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=MuhSalmanAlfarisy&layout=compact&theme=tokyonight" alt="Top Languages" width="45%"/>
 </p>
