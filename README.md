@@ -84,5 +84,5 @@
 
 <!-- GitHub Contribution Snake (Dark Mode Only) -->
 <p align="center">
-  <img src="github-snake-dark.svg" alt="GitHub Snake Animation (Dark Mode)" width="100%" />
+  <img src="dist/github-snake-dark.svg?palette=github-dark" alt="GitHub Snake Animation (Dark Mode)" width="100%" />
 </p>
