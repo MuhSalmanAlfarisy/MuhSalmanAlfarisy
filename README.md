@@ -75,5 +75,5 @@
   <br>
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=MuhSalmanAlfarisy&theme=tokyonight&hide_border=true&line=ffffff&point=ffffff&area=true&area_color=7957d5" alt="Activity Graph" width="100%"/>
   <br>
-  <img src="https://raw.githubusercontent.com/MuhSalmanAlfarisy/MuhSalmanAlfarisy/output/github-contribution-grid-snake.svg" alt="Contribution Snake" width="100%"/>
+  <img src="https://github.com/Platane/snk/raw/output/github-contribution-grid-snake.svg" alt="Contribution Snake" width="100%"/>
 </p>
