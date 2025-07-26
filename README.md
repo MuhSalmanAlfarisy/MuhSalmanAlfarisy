@@ -2,75 +2,62 @@
   <img src="https://github.com/user-attachments/assets/13e81973-da7d-4456-8392-f93c57f5df19" alt="Anime Dandadan GIF" width="100%" />
 </p>
 
-</p>
-
-<h1 align="center">Muhammad Salman Alfarisy</h1>
-<h3 align="center">Software Engineer | Full Stack Developer | AI & Security Enthusiast</h3>
+<h1 align="center">Hi 👋, I'm Muhammad Salman Alfarisy</h1>
+<h3 align="center">A passionate Full Stack Developer from Indonesia.</h3>
 
 <p align="center">
-  I'm a software engineer focused on building robust, intelligent, and secure digital solutions. With a full-stack mindset, I work across front-end, scalable back-end systems, cross-platform apps, and AI integration — all    grounded in strong cybersecurity principles.
+  I'm a software engineer focused on building robust, intelligent, and secure digital solutions. With a full-stack mindset, I work across front-end, scalable back-end systems, cross-platform apps, and AI integration — all grounded in strong cybersecurity principles.
 </p>
 
-<p align="center">
+### Connect with me:
+<div align="left">
   <a href="https://linkedin.com/in/muhsalmanzz/">
     <img src="https://img.shields.io/badge/LinkedIn-0A66C2.svg?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
   </a>
   <a href="mailto:muha22169ti@student.nurulfikri.ac.id">
     <img src="https://img.shields.io/badge/Gmail-D14836.svg?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail"/>
   </a>
-  <a href="https://wa.me/6281234567890"> <!-- Ganti dengan nomor WhatsApp Anda -->
+  <a href="https://wa.me/6281234567890"> 
     <img src="https://img.shields.io/badge/WhatsApp-25D366.svg?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp"/>
   </a>
-</p>
-
----
-
-### 📈 Statistik GitHub
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=MuhSalmanAlfarisy&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true" alt="GitHub Stats" width="45%"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=MuhSalmanAlfarisy&layout=compact&theme=tokyonight" alt="Top Languages" width="45%"/>
-  <br>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=MuhSalmanAlfarisy&theme=tokyonight" alt="GitHub Streak" width="90%"/>
-</p>
-
----
-
-### 💻 Tech Stack
-
-### 💻 Tech Stack
-
-<div align="center">
-
-#### 🧩 Frontend
-<img src="https://skillicons.dev/icons?i=html,css,js,ts,react,next,vue,tailwind" alt="Frontend" />
-
-#### 🛠️ Backend
-<img src="https://skillicons.dev/icons?i=nodejs,express,go,python,django,fastapi" alt="Backend" />
-
-#### 📱 Mobile
-<img src="https://skillicons.dev/icons?i=flutter,dart,react,kotlin,swift" alt="Mobile" />
-
-#### 🧠 AI / Machine Learning
-<img src="https://skillicons.dev/icons?i=py,tensorflow,pytorch,sklearn,pandas" alt="AI/ML" />
-
-#### 🗄️ Database
-<img src="https://skillicons.dev/icons?i=mysql,postgres,mongodb,redis,sqlite" alt="Databases" />
-
-#### ⚙️ DevOps & Tools
-<img src="https://skillicons.dev/icons?i=docker,kubernetes,aws,gcp,git,githubactions,figma,vscode" alt="DevOps & Tools" />
-
 </div>
 
+---
 
+### Languages and Tools:
+<div align="center">
+  <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,next,vue,tailwind,nodejs,express,go,python,django,flutter,dart,mysql,postgres,mongodb,redis,docker,kubernetes,git,githubactions,figma,vscode" alt="Tech Stack" />
+</div>
 
 ---
 
-### 🏆 Pencapaian
-<!-- GitHub Trophy Section -->
+<div align="left">
+  <h3>📊 My GitHub Stats</h3>
+  <div style="display: flex; justify-content: space-between; align-items: center;">
+    <div style="flex: 1;">
+      <img src="https://github-readme-stats.vercel.app/api?username=MuhSalmanAlfarisy&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true" alt="GitHub Stats"/>
+    </div>
+    <div style="flex: 1;">
+      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=MuhSalmanAlfarisy&layout=compact&theme=tokyonight" alt="Top Languages"/>
+    </div>
+  </div>
+</div>
+
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=MuhSalmanAlfarisy&theme=tokyonight&row=1&column=7" alt="GitHub Trophies" width="100%"/>
-  <br>
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=MuhSalmanAlfarisy&theme=tokyonight&hide_border=true&line=ffffff&point=ffffff&area=true&area_color=7957d5" alt="Activity Graph" width="100%"/>
-  <br>
-  <img src="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake-dark.svg" alt="Contribution Snake" width="100%"/>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=MuhSalmanAlfarisy&theme=tokyonight" alt="GitHub Streak" width="100%"/>
+</p>
+
+---
+
+<div align="left">
+<h3>🏆 My Badges</h3>
+
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=MuhSalmanAlfarisy&theme=tokyonight&row=1&column=7" 
+       alt="GitHub Trophies" width="100%" />
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake-dark.svg" 
+       alt="GitHub Contribution Snake" width="100%" />
 </p>
