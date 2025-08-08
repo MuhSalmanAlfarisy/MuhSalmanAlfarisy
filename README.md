@@ -3,7 +3,7 @@
 </div>
 
 <div align="left">
-  <h1>Hi 👋, I'm Muhammad Salman Alfarisy</h1>
+  <2>Hi 👋, I'm Muhammad Salman Alfarisy</h2>
   <h3>A passionate Full Stack Developer from Indonesia</h3>
   <p>I'm a software engineer focused on building robust, intelligent, and secure digital solutions. With a full-stack mindset, I work across front-end, scalable back-end systems, cross-platform apps, and 
   AI integration all grounded 
