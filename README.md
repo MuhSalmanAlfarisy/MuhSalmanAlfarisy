@@ -21,7 +21,8 @@
   <a href="https://linkedin.com/in/muhsalmanzz/">
     <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
-  <a href="mailto:muha22169ti@student.nurulfikri.ac.id">
+  <!-- Gmail compose web (desktop-friendly) -->
+  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=muha22169ti@student.nurulfikri.ac.id&su=Halo%20Salman&body=Halo%2C%20saya%20mau%20kontak%20Anda...">
     <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" />
   </a>
   <a href="https://wa.me/6281317407414">
@@ -29,6 +30,7 @@
   </a>
 
 </div>
+
 
 
 
