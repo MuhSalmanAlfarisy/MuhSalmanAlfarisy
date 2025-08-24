@@ -18,17 +18,18 @@
 
 <div align="center">
 
-  <a href="https://linkedin.com/in/muhsalmanzz/" target="_blank">
+  <a href="https://linkedin.com/in/muhsalmanzz/">
     <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
-  <a href="mailto:muha22169ti@student.nurulfikri.ac.id" target="_blank">
-    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" />
+  <a href="mailto:muha22169ti@student.nurulfikri.ac.id">
+    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" />
   </a>
-  <a href="https://wa.me/6281317407414" target="_blank">
+  <a href="https://wa.me/6281317407414">
     <img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp" />
   </a>
 
 </div>
+
 
 
 ---
@@ -55,11 +56,5 @@
 ---
 
 <div align="left">
-  <h3>🏆 My Badges</h3>
-</div>
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=MuhSalmanAlfarisy&theme=tokyonight&row=1&column=7" alt="GitHub Trophies" width="100%" />
-</p>
-<p align="center">
   <img src="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake-dark.svg" alt="GitHub Contribution Snake" width="100%" />
-</p>
+</div>
