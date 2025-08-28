@@ -51,10 +51,6 @@
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=MuhSalmanAlfarisy&layout=compact&theme=tokyonight" alt="Top Languages" width="45%"/>
 </p>
 
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=MuhSalmanAlfarisy&theme=tokyonight" alt="GitHub Streak" width="100%"/>
-</p>
-
 ---
 
 <div align="left">
