@@ -18,13 +18,9 @@
 
 ---
 
-## <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=800&size=30&pause=1000&color=C0C0C0&vCenter=true&repeat=true&width=220&lines=Tech+Stack" />
+**Stack**
 
-<div align="left">
-
-<img src="https://go-skill-icons.vercel.app/api/icons?i=html,css,js,ts,react,nextjs,vue,tailwind,nodejs,express,go,python,django,flutter,dart,mysql,postgres,mongodb,redis,docker,kubernetes,git,githubactions,figma&theme=dark" />
-
-</div>
+`HTML` `CSS` `JavaScript` `TypeScript` `React` `Next.js` `Vue` `Tailwind` `Node.js` `Express` `Go` `Python` `Django` `Flutter` `Dart` `MySQL` `PostgreSQL` `MongoDB` `Redis` `Docker` `Kubernetes` `Git` `GitHub Actions` `Figma`
 
 ---
 
