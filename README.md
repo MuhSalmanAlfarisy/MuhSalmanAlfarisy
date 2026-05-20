@@ -22,9 +22,11 @@
 
 <div align="left">
 
-<img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs,vue,tailwind,nodejs,express,go,python,django,flutter,dart,mysql,postgres,mongodb,redis,docker,kubernetes,git,github,figma&theme=dark" />
+<img src="https://go-skill-icons.vercel.app/api/icons?i=html,css,js,ts,react,nextjs,vue,tailwind,nodejs,express,go,python,django,flutter,dart,mysql,postgres,mongodb,redis,docker,kubernetes,git,githubactions,figma&theme=dark" />
 
 </div>
+
+---
 
 ---
 
