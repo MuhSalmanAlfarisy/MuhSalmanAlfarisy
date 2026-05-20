@@ -1,7 +1,7 @@
 <div align="left">
   <sub>Muhammad Salman Alfarisy</sub>
 
-  #  Software Engineer*
+  #  *Software Engineer*
   <sup>Indonesia</sup>
 </div>
 
