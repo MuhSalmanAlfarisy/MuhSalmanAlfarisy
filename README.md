@@ -13,8 +13,6 @@
 `HTML` `CSS` `JavaScript` `TypeScript` `React` `Next.js` `Vue` `Tailwind` `Node.js` `Express` `Go` `Python` `Django` `Flutter` `Dart` `MySQL` `PostgreSQL` `MongoDB` `Redis` `Docker` `Kubernetes` `Git` `GitHub Actions` `Figma`
 
 ---
-</div>
-
-<img align="right" src="https://github.com/user-attachments/assets/13e81973-da7d-4456-8392-f93c57f5df19" width="180" />
+![Profile Card](https://raw.githubusercontent.com/username/repo/main/assets/profile-card.svg)
 
 ![GitHub Contribution Snake](https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake-dark.svg)
