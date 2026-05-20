@@ -17,5 +17,3 @@
 <img align="right" src="https://github.com/user-attachments/assets/13e81973-da7d-4456-8392-f93c57f5df19" width="180" />
 
 ![GitHub Contribution Snake](https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake-dark.svg)
-
-<sub>— straight to the point.</sub>
