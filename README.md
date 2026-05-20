@@ -1,24 +1,24 @@
-## <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=800&size=30&pause=1000&color=00F0FF&vCenter=true&repeat=true&width=320&lines=Connect+With+Me" />
+## <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=800&size=30&pause=1000&color=C0C0C0&vCenter=true&repeat=true&width=320&lines=Connect+With+Me" />
 
 <div align="left">
 
 <a href="https://linkedin.com/in/muhsalmanzz/" target="_blank">
-  <img src="https://img.shields.io/badge/LinkedIn-00F0FF?style=for-the-badge&logo=linkedin&logoColor=black" />
+  <img src="https://img.shields.io/badge/LinkedIn-2B2B2B?style=for-the-badge&logo=linkedin&logoColor=C0C0C0&labelColor=111111" />
 </a>
 
 <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mohammedsalmanalf4@gmail.com" target="_blank">
-  <img src="https://img.shields.io/badge/Gmail-00F0FF?style=for-the-badge&logo=gmail&logoColor=black" />
+  <img src="https://img.shields.io/badge/Gmail-2B2B2B?style=for-the-badge&logo=gmail&logoColor=C0C0C0&labelColor=111111" />
 </a>
 
 <a href="https://wa.me/6281317407414" target="_blank">
-  <img src="https://img.shields.io/badge/WhatsApp-00F0FF?style=for-the-badge&logo=whatsapp&logoColor=black" />
+  <img src="https://img.shields.io/badge/WhatsApp-2B2B2B?style=for-the-badge&logo=whatsapp&logoColor=C0C0C0&labelColor=111111" />
 </a>
 
 </div>
 
 ---
 
-## <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=800&size=30&pause=1000&color=00F0FF&vCenter=true&repeat=true&width=220&lines=Tech+Stack" />
+## <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=800&size=30&pause=1000&color=C0C0C0&vCenter=true&repeat=true&width=220&lines=Tech+Stack" />
 
 <div align="left">
 
