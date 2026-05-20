@@ -3,15 +3,15 @@
 <div align="left">
 
 <a href="https://linkedin.com/in/muhsalmanzz/" target="_blank">
-  <img src="https://img.shields.io/badge/LinkedIn-2B2B2B?style=for-the-badge&logo=linkedin&logoColor=0A66C2&labelColor=111111" />
+  <img src="https://img.shields.io/badge/LinkedIn-1E1E1E?style=for-the-badge&logo=linkedin&logoColor=0A66C2&labelColor=0D0D0D" />
 </a>
 
 <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mohammedsalmanalf4@gmail.com" target="_blank">
-  <img src="https://img.shields.io/badge/Gmail-2B2B2B?style=for-the-badge&logo=gmail&logoColor=C0C0C0&labelColor=111111" />
+  <img src="https://img.shields.io/badge/Gmail-1E1E1E?style=for-the-badge&logo=gmail&logoColor=C0C0C0&labelColor=0D0D0D" />
 </a>
 
 <a href="https://wa.me/6281317407414" target="_blank">
-  <img src="https://img.shields.io/badge/WhatsApp-2B2B2B?style=for-the-badge&logo=whatsapp&logoColor=C0C0C0&labelColor=111111" />
+  <img src="https://img.shields.io/badge/WhatsApp-1E1E1E?style=for-the-badge&logo=whatsapp&logoColor=C0C0C0&labelColor=0D0D0D" />
 </a>
 
 </div>
