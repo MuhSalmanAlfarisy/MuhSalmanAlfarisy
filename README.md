@@ -1,15 +1,3 @@
-<div align="left">
-  <sub>Muhammad Salman Alfarisy</sub>
-
-  #  *Software Engineer*
-  <sup>Indonesia</sup>
-</div>
-
-<br/>
-
-I build **robust, intelligent, and secure** digital solutions — across front-end, scalable back-end systems, cross-platform apps, and AI integration, grounded in strong cybersecurity principles.
-
----
 
 **Connect**
 
@@ -24,6 +12,9 @@ I build **robust, intelligent, and secure** digital solutions — across front-e
 `HTML` `CSS` `JavaScript` `TypeScript` `React` `Next.js` `Vue` `Tailwind` `Node.js` `Express` `Go` `Python` `Django` `Flutter` `Dart` `MySQL` `PostgreSQL` `MongoDB` `Redis` `Docker` `Kubernetes` `Git` `GitHub Actions` `Figma`
 
 ---
+</div>
+
+<img align="right" src="https://github.com/user-attachments/assets/13e81973-da7d-4456-8392-f93c57f5df19" width="180" />
 
 ![GitHub Contribution Snake](https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake-dark.svg)
 
