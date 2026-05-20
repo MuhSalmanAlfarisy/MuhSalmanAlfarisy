@@ -18,14 +18,6 @@
 
 ---
 
-**Stack**
-
-`HTML` `CSS` `JavaScript` `TypeScript` `React` `Next.js` `Vue` `Tailwind` `Node.js` `Express` `Go` `Python` `Django` `Flutter` `Dart` `MySQL` `PostgreSQL` `MongoDB` `Redis` `Docker` `Kubernetes` `Git` `GitHub Actions` `Figma`
-
----
-
----
-
 <div align="center">
 
 <img src="https://github.com/user-attachments/assets/13e81973-da7d-4456-8392-f93c57f5df19" width="220" />
