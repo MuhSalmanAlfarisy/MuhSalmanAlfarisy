@@ -2,7 +2,8 @@
 **Connect**
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%23000000.svg?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/muhsalmanzz/)
-[![Email](https://img.shields.io/badge/Email-%23000000.svg?style=flat&logo=gmail&logoColor=white)](https://mail.google.com/mail/?view=cm&fs=1&to=muha22169ti@student.nurulfikri.ac.id)
+[![Email](https://img.shields.io/badge/Email-%23000000.svg?style=flat&logo=gmail&logoColor=white)](https://mail.google.com/mail/?view=cm&fs=1&to=mohammedsalmanalf4@gmail.com
+)
 [![WhatsApp](https://img.shields.io/badge/WhatsApp-%23000000.svg?style=flat&logo=whatsapp&logoColor=white)](https://wa.me/6281317407414)
 
 ---
