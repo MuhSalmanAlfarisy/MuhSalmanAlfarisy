@@ -239,45 +239,48 @@ def make_bar(percent, width=20):
 
 
 def build_markdown(totals, repo_count):
-    """Generate blok Markdown berisi tabel statistik bahasa."""
+    """Generate a clean, visually appealing Markdown block for language stats."""
     total_bytes = sum(totals.values())
     if total_bytes == 0:
-        return "_Belum ada data bahasa pemrograman._"
+        return "_No programming language data available._"
 
     sorted_langs = sorted(totals.items(), key=lambda x: x[1], reverse=True)
-    total_langs_found = len(totals)
-
+    
     lines = []
-
-    # Header
-    lines.append('<div align="center">')
-    lines.append("")
-    lines.append("| Bahasa | Progress | Persentase |")
-    lines.append("|--------|----------|------------|")
-
-    # Rows
+    
+    # Calculate percentages and filter out anything that rounds to 0.0%
+    valid_langs = []
     for lang, byte_count in sorted_langs:
         percent = (byte_count / total_bytes) * 100
+        if round(percent, 1) > 0.0:
+            valid_langs.append((lang, percent))
+
+    total_langs_found = len(valid_langs)
+
+    lines.append('<div>')
+    lines.append('<br>')
+
+    for lang, percent in valid_langs:
         color = LANGUAGE_COLORS.get(lang, "333333")
         badge_url = make_badge_url(lang, color)
         bar = make_bar(percent)
-
+        
+        # Using non-breaking spaces and clean formatting for a balanced look
         lines.append(
-            f"| ![]({badge_url}) | `{bar}` | **{percent:.1f}%** |"
+            f"![]({badge_url}) &nbsp; `{bar}` &nbsp; **{percent:.1f}%**  <br/>"
         )
 
-    lines.append("")
+    lines.append('<br>')
 
-    # Statistik ringkasan
+    # Summary statistics in Professional English
     now = datetime.now(timezone.utc).strftime("%d %B %Y, %H:%M UTC")
     lines.append(
-        f"> 📊 Dianalisis dari **{repo_count} repository** "
-        f"• **{total_langs_found} bahasa** terdeteksi "
-        f"• Terakhir diperbarui: **{now}**"
+        f"> 📊 **Statistics:** Analysed **{repo_count} public repositories** "
+        f"• Detected **{total_langs_found} primary languages**<br/>"
+        f"> 🕒 **Last Updated:** {now}"
     )
 
-    lines.append("")
-    lines.append("</div>")
+    lines.append('</div>')
 
     return "\n".join(lines)
 
@@ -313,25 +316,25 @@ def update_readme(markdown_block):
 
 
 def main():
-    print(f"=== Update Language Stats untuk @{USERNAME} ===")
+    print(f"=== Update Language Stats for @{USERNAME} ===")
 
     check_rate_limit()
 
-    print("Mengambil daftar repository...")
+    print("Fetching repository list...")
     repos = get_all_repos()
-    print(f"  Ditemukan {len(repos)} repository.")
+    print(f"  Found {len(repos)} repositories.")
 
-    print("Mengagregasi data bahasa...")
+    print("Aggregating language data...")
     totals, repo_count = aggregate_languages(repos)
-    print(f"  {len(totals)} bahasa dari {repo_count} repo (non-fork).")
+    print(f"  {len(totals)} languages found across {repo_count} non-forked repos.")
 
     print("Generating Markdown...")
     markdown_block = build_markdown(totals, repo_count)
 
-    print("Menulis ke README.md...")
+    print("Writing to README.md...")
     update_readme(markdown_block)
 
-    print("✅ README.md berhasil diperbarui.")
+    print("✅ README.md successfully updated.")
 
 
 if __name__ == "__main__":
