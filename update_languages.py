@@ -257,30 +257,28 @@ def build_markdown(totals, repo_count):
 
     total_langs_found = len(valid_langs)
 
-    lines.append('<div>')
-    lines.append('<br>')
+    lines.append('### 💻 Languages & Tools')
+    lines.append('')
 
     for lang, percent in valid_langs:
         color = LANGUAGE_COLORS.get(lang, "333333")
         badge_url = make_badge_url(lang, color)
         bar = make_bar(percent)
         
-        # Using non-breaking spaces and clean formatting for a balanced look
+        # Using markdown list for clean rendering
         lines.append(
-            f"![]({badge_url}) &nbsp; `{bar}` &nbsp; **{percent:.1f}%**  <br/>"
+            f"- ![]({badge_url}) &nbsp; `{bar}` &nbsp; **{percent:.1f}%**"
         )
 
-    lines.append('<br>')
+    lines.append('')
 
     # Summary statistics in Professional English
     now = datetime.now(timezone.utc).strftime("%d %B %Y, %H:%M UTC")
     lines.append(
         f"> 📊 **Statistics:** Analysed **{repo_count} public repositories** "
-        f"• Detected **{total_langs_found} primary languages**<br/>"
+        f"• Detected **{total_langs_found} primary languages**  \n"
         f"> 🕒 **Last Updated:** {now}"
     )
-
-    lines.append('</div>')
 
     return "\n".join(lines)
 
