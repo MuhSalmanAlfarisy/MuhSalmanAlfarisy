@@ -14,6 +14,8 @@
 
 <!--START_LANGUAGES-->
 
+### 💻 Languages & Tools
+
 - ![](https://img.shields.io/badge/Jupyter_Notebook-DA5B0B?style=flat-square&logoColor=white&logo=jupyter) &nbsp; `███████░░░░░░░░░░░░░` &nbsp; **37.3%**
 - ![](https://img.shields.io/badge/CSS-563d7c?style=flat-square&logoColor=white&logo=css3) &nbsp; `████░░░░░░░░░░░░░░░░` &nbsp; **19.1%**
 - ![](https://img.shields.io/badge/TypeScript-3178c6?style=flat-square&logoColor=white&logo=typescript) &nbsp; `██░░░░░░░░░░░░░░░░░░` &nbsp; **9.4%**
@@ -31,7 +33,7 @@
 - ![](https://img.shields.io/badge/CMake-DA3434?style=flat-square&logoColor=white) &nbsp; `░░░░░░░░░░░░░░░░░░░░` &nbsp; **0.2%**
 
 > 📊 **Statistics:** Analysed **19 public repositories** • Detected **15 primary languages**  
-> 🕒 **Last Updated:** 08 August 2026, 13:53 UTC
+> 🕒 **Last Updated:** 08 August 2026, 14:03 UTC
 
 <!--END_LANGUAGES-->
 
