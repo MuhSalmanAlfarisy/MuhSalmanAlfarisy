@@ -3,21 +3,26 @@ Script ini mengambil data bahasa pemrograman dari semua repository GitHub
 milik user, menghitung persentasenya, lalu menuliskannya ke README.md
 di antara marker <!--START_LANGUAGES--> dan <!--END_LANGUAGES-->.
 
-Fitur:
-  - Shields.io badges dengan warna GitHub Linguist & logo
-  - Progress bar visual (Unicode)
-  - Tabel Markdown yang rapi
-  - Statistik ringkasan & timestamp
-  - Rate-limit aware & error handling
+Tampilan yang dihasilkan:
+  - Satu SVG mandiri (assets/language-stats.svg) berisi bar proporsional
+    ala language-bar bawaan GitHub + legend berwarna, digambar langsung
+    oleh script ini (tidak bergantung layanan badge eksternal seperti
+    shields.io, jadi lebih cepat dan tidak bisa "putus" kalau layanan
+    pihak ketiga down).
+  - Baris ringkasan (jumlah bahasa, jumlah repo, waktu update) sebagai
+    teks biasa di README, terpisah dari gambar supaya history git tetap
+    rapi (gambar hanya berubah kalau datanya benar-benar berubah).
 
 Dijalankan otomatis lewat GitHub Actions (lihat update-languages.yml).
 """
 
+import math
 import os
 import re
 import sys
 import time
 from datetime import datetime, timezone
+from xml.sax.saxutils import escape as xml_escape
 
 import requests
 
@@ -28,6 +33,7 @@ import requests
 USERNAME = os.environ.get("GH_USERNAME", "")
 TOKEN = os.environ.get("GH_TOKEN", "")
 README_PATH = "README.md"
+SVG_PATH = "assets/language-stats.svg"
 
 START_MARKER = "<!--START_LANGUAGES-->"
 END_MARKER = "<!--END_LANGUAGES-->"
@@ -43,7 +49,7 @@ else:
     print("WARNING: GH_TOKEN tidak di-set. Rate limit = 60 req/jam.")
 
 # ---------------------------------------------------------------------------
-# Warna bahasa GitHub Linguist  (hex tanpa #)
+# Warna bahasa GitHub Linguist (hex tanpa #)
 # https://github.com/ozh/github-colors
 # ---------------------------------------------------------------------------
 
@@ -95,42 +101,7 @@ LANGUAGE_COLORS = {
     "TeX": "3D6117",
     "Vim Script": "199f4b",
 }
-
-# Logo Simple Icons (untuk shields.io) — hanya bahasa dengan ikon yang tersedia
-LANGUAGE_LOGOS = {
-    "Python": "python",
-    "JavaScript": "javascript",
-    "TypeScript": "typescript",
-    "Java": "openjdk",
-    "C": "c",
-    "C++": "cplusplus",
-    "C#": "csharp",
-    "Go": "go",
-    "Rust": "rust",
-    "Ruby": "ruby",
-    "PHP": "php",
-    "Swift": "swift",
-    "Kotlin": "kotlin",
-    "Dart": "dart",
-    "Scala": "scala",
-    "R": "r",
-    "Lua": "lua",
-    "Shell": "gnubash",
-    "PowerShell": "powershell",
-    "Perl": "perl",
-    "Haskell": "haskell",
-    "Elixir": "elixir",
-    "Julia": "julia",
-    "HTML": "html5",
-    "CSS": "css3",
-    "Vue": "vuedotjs",
-    "Svelte": "svelte",
-    "Jupyter Notebook": "jupyter",
-    "Dockerfile": "docker",
-    "Nim": "nim",
-    "OCaml": "ocaml",
-    "Zig": "zig",
-}
+DEFAULT_COLOR = "8b949e"  # abu-abu netral untuk bahasa yang tidak ada di daftar
 
 # ---------------------------------------------------------------------------
 # Fungsi utilitas
@@ -160,7 +131,7 @@ def api_get(url, params=None):
         return resp.json()
     except requests.exceptions.HTTPError as e:
         if resp.status_code == 403 and "rate limit" in resp.text.lower():
-            print(f"Rate limit tercapai. Menunggu 60s...")
+            print("Rate limit tercapai. Menunggu 60s...")
             time.sleep(60)
             return api_get(url, params)  # retry sekali
         print(f"HTTP Error {resp.status_code} untuk {url}: {e}")
@@ -214,72 +185,98 @@ def aggregate_languages(repos):
 
 
 # ---------------------------------------------------------------------------
+# Generate SVG (bar proporsional + legend) — menggantikan badge per-bahasa
+# ---------------------------------------------------------------------------
+
+
+def generate_language_bar_svg(totals, width=760):
+    """
+    Buat satu SVG mandiri: bar proporsional (mirip language-bar bawaan
+    GitHub di halaman repo) diikuti legend berwarna dalam grid rapi.
+    Semua digambar langsung sebagai <rect>/<text> — tidak memanggil
+    gambar/layanan eksternal apa pun, jadi konsisten dan cepat dimuat.
+
+    Return (svg_markup, jumlah_bahasa) atau (None, 0) kalau tidak ada data.
+    """
+    total_bytes = sum(totals.values())
+    if total_bytes == 0:
+        return None, 0
+
+    items = []
+    for lang, byte_count in sorted(totals.items(), key=lambda x: x[1], reverse=True):
+        percent = (byte_count / total_bytes) * 100
+        if round(percent, 1) > 0.0:
+            items.append((lang, percent))
+
+    if not items:
+        return None, 0
+
+    bar_height = 10
+    top_gap = 20
+    row_height = 22
+    cols = 3 if len(items) > 4 else len(items)
+    col_width = width / cols
+    rows = math.ceil(len(items) / cols)
+    height = bar_height + top_gap + rows * row_height + 2
+
+    svg = [
+        f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" '
+        f'viewBox="0 0 {width} {height}" '
+        f'font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif">'
+    ]
+
+    # Bar proporsional: ujung membulat, sambungan antar-warna tegas
+    svg.append(
+        f'<clipPath id="barClip"><rect width="{width}" height="{bar_height}" '
+        f'rx="{bar_height / 2}"/></clipPath>'
+    )
+    svg.append('<g clip-path="url(#barClip)">')
+    x = 0.0
+    for lang, percent in items:
+        seg_width = (percent / 100) * width
+        color = LANGUAGE_COLORS.get(lang, DEFAULT_COLOR)
+        svg.append(f'<rect x="{x:.2f}" width="{seg_width:.2f}" height="{bar_height}" fill="#{color}"/>')
+        x += seg_width
+    svg.append("</g>")
+
+    # Legend grid: kotak warna + nama bahasa + persentase, sejajar rapi
+    for i, (lang, percent) in enumerate(items):
+        col, row = i % cols, i // cols
+        cx = col * col_width
+        cy = bar_height + top_gap + row * row_height
+        color = LANGUAGE_COLORS.get(lang, DEFAULT_COLOR)
+        label = xml_escape(lang)
+        svg.append(
+            f'<rect x="{cx:.1f}" y="{cy - 9:.1f}" width="10" height="10" rx="2" fill="#{color}"/>'
+            f'<text x="{cx + 16:.1f}" y="{cy:.1f}" font-size="12" fill="#{DEFAULT_COLOR}" '
+            f'dominant-baseline="middle">{label} · {percent:.1f}%</text>'
+        )
+
+    svg.append("</svg>")
+    return "".join(svg), len(items)
+
+
+def save_svg(svg_markup, path=SVG_PATH):
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    with open(path, "w", encoding="utf-8", newline="\n") as f:
+        f.write(svg_markup)
+    return path
+
+
+# ---------------------------------------------------------------------------
 # Generate output Markdown
 # ---------------------------------------------------------------------------
 
 
-def make_badge_url(lang, color):
-    """Buat URL shields.io badge untuk bahasa."""
-    # Encode karakter khusus untuk URL
-    safe_lang = lang.replace("-", "--").replace(" ", "_").replace("#", "%23").replace("+", "%2B")
-    logo = LANGUAGE_LOGOS.get(lang, "")
-
-    base = f"https://img.shields.io/badge/{safe_lang}-{color}"
-    params = "style=flat-square&logoColor=white"
-    if logo:
-        params += f"&logo={logo}"
-
-    return f"{base}?{params}"
-
-
-def make_bar(percent, width=20):
-    """Buat progress bar Unicode, dengan clamping aman."""
-    filled = max(0, min(width, round(percent / (100 / width))))
-    return "█" * filled + "░" * (width - filled)
-
-
-def build_markdown(totals, repo_count):
-    """Generate a clean, visually appealing Markdown block for language stats."""
-    total_bytes = sum(totals.values())
-    if total_bytes == 0:
-        return "_No programming language data available._"
-
-    sorted_langs = sorted(totals.items(), key=lambda x: x[1], reverse=True)
-    
-    lines = []
-    
-    # Calculate percentages and filter out anything that rounds to 0.0%
-    valid_langs = []
-    for lang, byte_count in sorted_langs:
-        percent = (byte_count / total_bytes) * 100
-        if round(percent, 1) > 0.0:
-            valid_langs.append((lang, percent))
-
-    total_langs_found = len(valid_langs)
-
-    lines.append('### 💻 Languages & Tools')
-    lines.append('')
-
-    for lang, percent in valid_langs:
-        color = LANGUAGE_COLORS.get(lang, "333333")
-        badge_url = make_badge_url(lang, color)
-        bar = make_bar(percent)
-        
-        # Using markdown list for clean rendering
-        lines.append(
-            f"- ![]({badge_url}) &nbsp; `{bar}` &nbsp; **{percent:.1f}%**"
-        )
-
-    lines.append('')
-
-    # Summary statistics in Professional English
+def build_markdown(svg_path, repo_count, lang_count):
+    """Blok teks yang ditulis di antara marker START/END_LANGUAGES."""
     now = datetime.now(timezone.utc).strftime("%d %B %Y, %H:%M UTC")
-    lines.append(
-        f"> 📊 **Statistics:** Analysed **{repo_count} public repositories** "
-        f"• Detected **{total_langs_found} primary languages**  \n"
-        f"> 🕒 **Last Updated:** {now}"
-    )
-
+    lines = [
+        f'<img src="./{svg_path}" alt="Most used languages" />',
+        "",
+        f"_{lang_count} bahasa terdeteksi dari {repo_count} repository publik "
+        f"· diperbarui {now}_",
+    ]
     return "\n".join(lines)
 
 
@@ -326,8 +323,15 @@ def main():
     totals, repo_count = aggregate_languages(repos)
     print(f"  {len(totals)} languages found across {repo_count} non-forked repos.")
 
-    print("Generating Markdown...")
-    markdown_block = build_markdown(totals, repo_count)
+    print("Generating language bar SVG...")
+    svg_markup, lang_count = generate_language_bar_svg(totals)
+
+    if svg_markup is None:
+        markdown_block = "_Belum ada data bahasa pemrograman._"
+    else:
+        svg_path = save_svg(svg_markup)
+        markdown_block = build_markdown(svg_path, repo_count, lang_count)
+        print(f"  SVG disimpan ke {svg_path}")
 
     print("Writing to README.md...")
     update_readme(markdown_block)
