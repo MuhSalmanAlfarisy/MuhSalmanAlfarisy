@@ -11,9 +11,11 @@
 ### Languages & Tools
 
 <!--START_LANGUAGES-->
+
 <img src="./assets/language-stats.svg" alt="Most used languages" />
 
-_15 languages detected from 19 public repositories · Updated 09 August 2026, 16:16 WIB_
+_15 languages detected from 19 public repositories · Updated 09 August 2026, 16:47 WIB_
+
 <!--END_LANGUAGES-->
 
 ### GitHub Activity
