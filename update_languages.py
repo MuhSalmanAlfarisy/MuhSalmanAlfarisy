@@ -21,7 +21,7 @@ import os
 import re
 import sys
 import time
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 from xml.sax.saxutils import escape as xml_escape
 
 import requests
@@ -101,7 +101,8 @@ LANGUAGE_COLORS = {
     "TeX": "3D6117",
     "Vim Script": "199f4b",
 }
-DEFAULT_COLOR = "8b949e"  # abu-abu netral untuk bahasa yang tidak ada di daftar
+DEFAULT_LANG_COLOR = "94A3B8"  # silver-blue untuk bahasa yang tidak ada di daftar warna
+LEGEND_TEXT_COLOR = "64748B"  # slate biru-abu, senada tema biru/silver
 
 # ---------------------------------------------------------------------------
 # Fungsi utilitas
@@ -211,13 +212,13 @@ def generate_language_bar_svg(totals, width=760):
     if not items:
         return None, 0
 
-    bar_height = 10
-    top_gap = 20
+    bar_height = 14
+    top_gap = 24
     row_height = 22
     cols = 3 if len(items) > 4 else len(items)
     col_width = width / cols
     rows = math.ceil(len(items) / cols)
-    height = bar_height + top_gap + rows * row_height + 2
+    height = bar_height + top_gap + rows * row_height + 4
 
     svg = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" '
@@ -225,18 +226,32 @@ def generate_language_bar_svg(totals, width=760):
         f'font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif">'
     ]
 
-    # Bar proporsional: ujung membulat, sambungan antar-warna tegas
+    # Definisi bersama: clip pill, gloss (highlight kaca), drop shadow (kesan 3D)
     svg.append(
-        f'<clipPath id="barClip"><rect width="{width}" height="{bar_height}" '
-        f'rx="{bar_height / 2}"/></clipPath>'
+        f'<defs>'
+        f'<clipPath id="barClip"><rect width="{width}" height="{bar_height}" rx="{bar_height / 2}"/></clipPath>'
+        f'<linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1">'
+        f'<stop offset="0%" stop-color="#ffffff" stop-opacity="0.35"/>'
+        f'<stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>'
+        f'</linearGradient>'
+        f'<filter id="barShadow" x="-20%" y="-40%" width="140%" height="220%">'
+        f'<feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#0A121C" flood-opacity="0.35"/>'
+        f'</filter>'
+        f'</defs>'
     )
+
+    # Bar proporsional dengan bayangan (grup luar, tidak ikut ter-clip)
+    svg.append('<g filter="url(#barShadow)">')
     svg.append('<g clip-path="url(#barClip)">')
     x = 0.0
     for lang, percent in items:
         seg_width = (percent / 100) * width
-        color = LANGUAGE_COLORS.get(lang, DEFAULT_COLOR)
+        color = LANGUAGE_COLORS.get(lang, DEFAULT_LANG_COLOR)
         svg.append(f'<rect x="{x:.2f}" width="{seg_width:.2f}" height="{bar_height}" fill="#{color}"/>')
         x += seg_width
+    # Lapisan gloss tipis di atas seluruh bar untuk kesan glossy/3D
+    svg.append(f'<rect width="{width}" height="{bar_height}" fill="url(#gloss)"/>')
+    svg.append("</g>")
     svg.append("</g>")
 
     # Legend grid: kotak warna + nama bahasa + persentase, sejajar rapi
@@ -244,11 +259,11 @@ def generate_language_bar_svg(totals, width=760):
         col, row = i % cols, i // cols
         cx = col * col_width
         cy = bar_height + top_gap + row * row_height
-        color = LANGUAGE_COLORS.get(lang, DEFAULT_COLOR)
+        color = LANGUAGE_COLORS.get(lang, DEFAULT_LANG_COLOR)
         label = xml_escape(lang)
         svg.append(
-            f'<rect x="{cx:.1f}" y="{cy - 9:.1f}" width="10" height="10" rx="2" fill="#{color}"/>'
-            f'<text x="{cx + 16:.1f}" y="{cy:.1f}" font-size="12" fill="#{DEFAULT_COLOR}" '
+            f'<rect x="{cx:.1f}" y="{cy - 9:.1f}" width="10" height="10" rx="2.5" fill="#{color}"/>'
+            f'<text x="{cx + 16:.1f}" y="{cy:.1f}" font-size="12" fill="#{LEGEND_TEXT_COLOR}" '
             f'dominant-baseline="middle">{label} · {percent:.1f}%</text>'
         )
 
@@ -270,12 +285,13 @@ def save_svg(svg_markup, path=SVG_PATH):
 
 def build_markdown(svg_path, repo_count, lang_count):
     """Blok teks yang ditulis di antara marker START/END_LANGUAGES."""
-    now = datetime.now(timezone.utc).strftime("%d %B %Y, %H:%M UTC")
+    wib_tz = timezone(timedelta(hours=7))
+    now = datetime.now(wib_tz).strftime("%d %B %Y, %H:%M WIB")
     lines = [
         f'<img src="./{svg_path}" alt="Most used languages" />',
         "",
-        f"_{lang_count} bahasa terdeteksi dari {repo_count} repository publik "
-        f"· diperbarui {now}_",
+        f"_{lang_count} languages detected from {repo_count} public repositories "
+        f"· Updated {now}_",
     ]
     return "\n".join(lines)
 
