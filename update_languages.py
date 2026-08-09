@@ -100,6 +100,9 @@ LANGUAGE_COLORS = {
     "MATLAB": "e16737",
     "TeX": "3D6117",
     "Vim Script": "199f4b",
+    "Less": "1d365d",
+    "Hack": "878787",
+    "Blade": "f7523f",
 }
 DEFAULT_LANG_COLOR = "94A3B8"  # silver-blue untuk bahasa yang tidak ada di daftar warna
 LEGEND_TEXT_COLOR = "64748B"  # slate biru-abu, senada tema biru/silver
@@ -231,11 +234,11 @@ def generate_language_bar_svg(totals, width=760):
         f'<defs>'
         f'<clipPath id="barClip"><rect width="{width}" height="{bar_height}" rx="{bar_height / 2}"/></clipPath>'
         f'<linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1">'
-        f'<stop offset="0%" stop-color="#ffffff" stop-opacity="0.35"/>'
+        f'<stop offset="0%" stop-color="#ffffff" stop-opacity="0.5"/>'
         f'<stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>'
         f'</linearGradient>'
         f'<filter id="barShadow" x="-20%" y="-40%" width="140%" height="220%">'
-        f'<feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#0A121C" flood-opacity="0.35"/>'
+        f'<feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0A121C" flood-opacity="0.5"/>'
         f'</filter>'
         f'</defs>'
     )
