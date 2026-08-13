@@ -14,7 +14,7 @@
 
 <img src="./assets/language-stats.svg" alt="Most used languages" />
 
-_18 languages detected from 21 public repositories · Updated 12 August 2026, 07:57 WIB_
+_19 languages detected from 22 public repositories · Updated 13 August 2026, 07:58 WIB_
 
 <!--END_LANGUAGES-->
 
