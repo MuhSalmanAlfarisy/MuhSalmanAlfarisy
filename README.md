@@ -5,17 +5,16 @@
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-1B2A41?style=for-the-badge&logo=linkedin&logoColor=C9D3DC&labelColor=0A121C&logoSize=auto)](https://linkedin.com/in/muhsalmanzz/)
 [![Gmail](https://img.shields.io/badge/Gmail-1B2A41?style=for-the-badge&logo=gmail&logoColor=C9D3DC&labelColor=0A121C)](https://mail.google.com/mail/?view=cm&fs=1&to=mohammedsalmanalf4@gmail.com)
 [![WhatsApp](https://img.shields.io/badge/WhatsApp-1B2A41?style=for-the-badge&logo=whatsapp&logoColor=C9D3DC&labelColor=0A121C)](https://wa.me/6281317407414)
+[![Portfolio](https://img.shields.io/badge/Portfolio-1B2A41?style=for-the-badge&logo=googlechrome&logoColor=C9D3DC&labelColor=0A121C)](https://kingsalman.my.id)
 
 <br clear="right" />
 
 ### Languages & Tools
 
 <!--START_LANGUAGES-->
-
 <img src="./assets/language-stats.svg" alt="Most used languages" />
 
 _19 languages detected from 25 public repositories · Updated 26 August 2026, 07:36 WIB_
-
 <!--END_LANGUAGES-->
 
 ### GitHub Activity
