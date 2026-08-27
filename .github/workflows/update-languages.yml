@@ -2,8 +2,8 @@ name: Update Language Stats
 
 on:
   schedule:
-    # Jalan otomatis setiap hari jam 00:00 UTC
-    - cron: "0 0 * * *"
+    # Jalan otomatis setiap hari jam 00:23 UTC (07:23 WIB) untuk menghindari bottleneck server GitHub
+    - cron: "23 0 * * *"
   push:
     branches:
       - main
